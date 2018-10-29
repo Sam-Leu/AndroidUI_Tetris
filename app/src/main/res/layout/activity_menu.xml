@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/tetris_splash"
+    tools:context=".MenuActivity">
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/menutile"
+        android:onClick="onClick"
+        android:text="Start"
+        android:textAllCaps="false"
+        android:textSize="28dp" />
+
+    <Button
+        android:id="@+id/btn_battle"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:onClick="onClick"
+        android:text="Battle"
+        android:textSize="28dp"
+        android:background="@drawable/menutile"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/btn_stars"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:onClick="onClick"
+        android:text="Stars"
+        android:textSize="28dp"
+        android:background="@drawable/menutile"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/btn_options"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:onClick="onClick"
+        android:text="Options"
+        android:textSize="28dp"
+        android:background="@drawable/menutile"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/btn_quit"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:onClick="onClick"
+        android:text="Quit"
+        android:textSize="28dp"
+        android:background="@drawable/menutile"
+        android:layout_marginTop="15dp"/>
+
+
+
+</LinearLayout>
