@@ -18,8 +18,28 @@ public class SplashActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash);
         splashActivity = this;
-        final ProgressDialog dialog = ProgressDialog.show(SplashActivity.this, "", "loading...");
 
+        darkenBackground();
+        startActivity();
+
+    }
+
+    /**
+     * 设置背景灰色
+     */
+    public void darkenBackground(){
+
+        WindowManager.LayoutParams lp = getWindow().getAttributes();
+        lp.alpha = (float) 0.5;
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
+        getWindow().setAttributes(lp);
+    }
+
+    /**
+     * 跳转菜单Activity
+     */
+    public void startActivity(){
+        final ProgressDialog dialog = ProgressDialog.show(SplashActivity.this, "", "loading...");
         Thread thread = new Thread(){
             @Override
             public void run() {
@@ -36,7 +56,6 @@ public class SplashActivity extends AppCompatActivity {
             }
         };
         thread.start();
-
     }
 
 }
