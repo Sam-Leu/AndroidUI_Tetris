@@ -17,6 +17,7 @@
         android:onClick="onClick"
         android:text="Campaign"
         android:textSize="28dp"
+        android:textColor="#CD6600"
         android:background="@drawable/menutile_pressed"
         android:layout_marginTop="150dp"/>
 
@@ -29,6 +30,7 @@
         android:onClick="onClick"
         android:text="Marathon"
         android:textSize="28dp"
+        android:textColor="#CD6600"
         android:background="@drawable/menutile_pressed"
         android:layout_marginTop="20dp"/>
 
@@ -41,6 +43,7 @@
         android:onClick="onClick"
         android:text="Back"
         android:textSize="28dp"
+        android:textColor="#CD6600"
         android:background="@drawable/menutile_pressed"
         android:layout_marginTop="20dp"/>
 
